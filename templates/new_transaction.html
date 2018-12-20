@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Blockchain </title>
+		</script>
+	</head>
+	<body>
+		<h1>Add Transaction</h1>
+		<form  action="{{ url_for('mine1') }}" method="post">
+			Sender: <input type="text" name = "sender" required>
+			Receipient: <input type="text" name = "recipient" required>
+			Amount: <input type="text" name = "amount" required>
+			<br/>
+			<button> Submit</button>
+		</form>
+		<br/><br/><br/>
+		<p> <i>{{ get_flashed_messages()[0] }}</i></p>
+	</body>
+</html>
+
+
